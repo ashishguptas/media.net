@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop up</title>
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 7 ]> <div id='ieVersion' class="ie6"></div> <![endif]-->
+
+    <!--[if IE 7 ]>    <div id='ieVersion' class="ie7"></div> <![endif]-->
+
+    <!--[if (gt IE 7)|!(IE)]><!-->
+
+    <div id="ieVersion" class=""></div>
+
+    <!--<![endif]-->
+</head>
+
+<body>
+    <button id="installnow" class="btn">Install Now</button>
+
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <h1>Thank you for downloading.</h1>
+            <button class="close" id="close">X</button>
+        </div>
+    </div>
+    <div id="oldBrowserMessage" class="hidden">
+
+
+
+        <p>
+
+            Hello! Welcome to our new web site. This site is not fully supported in Internet Explorer 7 (and earlier)
+            versions.
+
+            Please upgrade your Internet Explorer browser to a newer version.
+
+        </p>
+
+
+
+        <p>
+
+            As an alternative, you can use either of the options below to browse the site:
+
+        </p>
+
+
+
+        <ol>
+
+            <li>Use Google Chrome browser. Here is the <a
+                    href="https://support.google.com/chrome/answer/95346?hl=en">download link.</a></li>
+
+            <li>Use Firefox browser. Here is the <a href="http://www.mozilla.org/en-US/firefox/new/">download link.</a>
+            </li>
+
+        </ol>
+
+
+
+        <p>
+
+            Thanks.
+
+        </p>
+
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

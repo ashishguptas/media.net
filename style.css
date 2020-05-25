@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.btn{
+    width: 173px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #ffc600;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: normal;
+    text-align: center;
+    color: #53627c;
+    border: none;
+    outline: none;
+}
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+.modal-container.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal{
+    background-color: #ffffff;
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%; 
+    text-align: center;
+    position: relative;
+}
+.modal .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #ffc600;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: normal;
+    text-align: center;
+    color: #53627c;
+    border: none;
+    outline: none;
+}
+@-moz-document url-prefix() {
+    .modal {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+} 
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    .modal {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
+@supports (-ms-ime-align:auto) {
+    .modal {
+        position: absolute; 
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        top: 0px;
+        margin: auto;
+        height: auto;
+    }
+}
+
+.hidden {
+
+	display: none;
+
+}
